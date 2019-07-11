@@ -7,6 +7,9 @@ body {
 
 h1 {
         text-align: center;
+        font-family: mr-eaves-sans, sans-serif;
+        font-size: 3em;
+        font-style: normal;
 }
 
 hr {
@@ -28,12 +31,19 @@ hr {
 }
 
 .module {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+
         /* Demo-Specific Styles */
         background: #eaeaea;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 200px;
+        height: 140px;
+        position: relative;
 
         /* Flex Fallback */
         margin-left: 5px;
@@ -41,9 +51,42 @@ hr {
         flex: 1 1 200px;
 }
 
+.module:hover {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        filter: grayscale(0%);
+        transition:0.5s;
+        transition:0.5s;
+}
+
+.module p {
+        font-family: mr-eaves-sans, sans-serif;
+        font-size: 2em;
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;      
+}
+
+p.text {
+        opacity: 1;
+        transition:all 0.6s ease;
+}
+
 /* If Grid is supported, remove the margin we set for the fallback */
 @supports (display: grid) {
         .module {
                 margin: 0;
         }
+}
+
+.footer p {
+        font-family: mr-eaves-sans, sans-serif;
 }

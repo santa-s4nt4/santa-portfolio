@@ -3,22 +3,49 @@
 <link rel='stylesheet' type='text/css' href='style.css'>
 <link rel="shortcut icon"
         href="https://lh3.googleusercontent.com/MZPeDAzoF1rAf92dzV3XIFJYRJFYH3JlTxev8sY4a1XBjcx0kWScrFIqx_GKoSso1-UZnhM6zHz8ho8WC8C1ev3EdzNRcoX4Fk9mjw751WCF6VzEvonHTmtC5aQeqVksczAlTjSUPVo=w2400">
+
+<head>
+        <script>
+                (function (d) {
+                        var config = {
+                                kitId: 'krb5kuj',
+                                scriptTimeout: 3000,
+                                async: true
+                        },
+                                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+                })(document);
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>santa-portfolio</title>
+</head>
+
 <body class="category-all">
         <h1 class="site-title">santa-portfolio</h1>
         <hr>
         <div class="grid">
-                <div class="module">Design-Programming Final</div>
-                <div class="module">VJ System (Source Cord Vol.3)</div>
-                <div class="module">Spectrum of Light</div>
-                <div class="module">Night University</div>
-                <div class="module">Sakura</div>
+                <div class="module">
+                        <p id="text">design programming final</p>
+                </div>
+                <div class="module"><img src="thumbnail/logo_santa.png" alt="" width="210">
+                        <p>santa logo</p>
+                </div>
+                <div class="module">
+                        <p>vj system</p>
+                </div>
+                <div class="module"><img class="thumbnail" src="thumbnail\Spectral.jpg" alt="" width="210">
+                        <p>spectrum of light</p>
+                </div>
+                <div class="module"><img class="thumbnail" src="thumbnail\sfc_night.jpg" alt="" width="210">
+                        <p>night university</p>
+                </div>
+                <div class="module"><img class="thumbnail" src="thumbnail\sakura_fujisawa.jpg" alt="" width="210">
+                                <p>sakura</p>
+                </div>
         </div>
         <div class="footer">
                 <p>© 2019 santa_sukitoku</p>
         </div>
 </body>
+
 </html>
-        
