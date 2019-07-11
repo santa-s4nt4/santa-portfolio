@@ -36,9 +36,11 @@ hr {
         -o-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
         filter: grayscale(100%);
+        transition:0.5s;
+        transition:0.5s;
 
         /* Demo-Specific Styles */
-        background: #eaeaea;
+        background: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -87,6 +89,9 @@ p.text {
         }
 }
 
+
+
 .footer p {
         font-family: mr-eaves-sans, sans-serif;
+        text-align: center;
 }
