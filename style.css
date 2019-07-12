@@ -5,21 +5,22 @@ body {
         background-attachment: fixed;
 }
 
-h1 {
+.category-all h1 {
         text-align: center;
         font-family: mr-eaves-sans, sans-serif;
         font-size: 3em;
         font-style: normal;
 }
 
-h2 {
+.category-all h2 {
         text-align: center;
         font-family: mr-eaves-sans, sans-serif;
+        padding-bottom: 1.5%;
         font-size: 2em;
         font-style: normal;
 }
 
-hr {
+.category-all hr {
         margin: 5%;
 }
 
