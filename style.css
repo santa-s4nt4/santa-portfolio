@@ -1,7 +1,7 @@
 canvas {
     display: block;
     position: absolute;
-    left: 0;
+    left: 0%;
     top: 0;
     z-index: -999;
 }
@@ -11,6 +11,19 @@ body {
         max-width: 56em;
         padding: 1em 0;
         background-attachment: fixed;
+}
+
+a {
+        text-decoration:none;
+}
+
+a:visited {
+        text-decoration:none;
+        color: #ffffff;
+}
+
+a:hover {
+        color: #55555521;
 }
 
 .category-all h1 {
@@ -26,7 +39,7 @@ body {
         font-family: mr-eaves-sans, sans-serif;
         color: #ffffff;
         padding-bottom: 1.5%;
-        font-size: 2em;
+        font-size: 2.5em;
         font-style: normal;
 }
 
@@ -63,10 +76,12 @@ hr {
 
         /* Demo-Specific Styles */
         background: #ffffff;
+        align-self: center;
+        align-content: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 140px;
+        height: 133px;
         width: 210px;
         position: relative;
 
@@ -110,6 +125,39 @@ p.text {
         .module {
                 margin: 0;
         }
+}
+
+.content h2 {
+        text-align: center;
+        font-family: mr-eaves-sans, sans-serif;
+        color: #ffffff;
+        padding-bottom: 1.5%;
+        font-size: 2.5em;
+        font-style: normal;
+}
+
+.content img {
+        padding-bottom: 0%;
+        padding-top: 3%;
+}
+
+.content h2 {
+        font-family: mr-eaves-sans, sans-serif;
+        padding-bottom: 0%;
+}
+
+.content mark {
+        font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+        text-align: center;
+        font-size: 1em;
+        color: #ffffff;
+        background: #44444483;
+        padding-right: 1%;
+        padding-left: 1%;
+}
+
+.content {
+        text-align: center;
 }
 
 .footer p {
