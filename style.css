@@ -1,3 +1,11 @@
+canvas {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+
 body {
         margin: 0 auto;
         max-width: 56em;
@@ -8,6 +16,7 @@ body {
 .category-all h1 {
         text-align: center;
         font-family: mr-eaves-sans, sans-serif;
+        color: #ffffff;
         font-size: 3em;
         font-style: normal;
 }
@@ -15,13 +24,15 @@ body {
 .category-all h2 {
         text-align: center;
         font-family: mr-eaves-sans, sans-serif;
+        color: #ffffff;
         padding-bottom: 1.5%;
         font-size: 2em;
         font-style: normal;
 }
 
 .category-all hr {
-        margin: 5%;
+        color: #ffffff;
+        margin: 0%;
 }
 
 .grid {
@@ -99,6 +110,7 @@ p.text {
 
 .footer p {
         font-family: mr-eaves-sans, sans-serif;
+        color: #ffffff;
         text-align: center;
         padding: 1.5%;
 }
