@@ -176,9 +176,15 @@ p.text {
 .content p {
         font-family: a-otf-ud-shin-go-pr6n, sans-serif;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.05em;
         color: #ffffff;
-        padding: 5%;
+        background: #44444483;
+        padding-top: 2%;
+        padding-bottom: 2%; 
+        margin-top: 8%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+        margin-right: 0%; 
 }
 
 .content {

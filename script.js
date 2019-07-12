@@ -1,9 +1,11 @@
 var program;
+var w;
+var h;
 
 function setup() {
   pixelDensity(1);
-  var w = document.documentElement.scrollWidth;
-  var h = document.documentElement.scrollHeight;
+  w = document.documentElement.scrollWidth;
+  h = document.documentElement.scrollHeight;
   createCanvas(w, h, WEBGL);
   gl = this.canvas.getContext('webgl');
   rectMode(CENTER);
@@ -95,5 +97,5 @@ void main()
 }`
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(w, h);
 }
