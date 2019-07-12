@@ -13,6 +13,22 @@ body {
         padding: 1em 0;
         background-attachment: fixed;
 }
+/*
+.bg{
+        background-size: cover;
+}
+ 
+.bg:before{
+        content: "";
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 1%;
+        right: 25%;
+        bottom: 1%;
+        left: 25%;
+        z-index: -1;
+}
+*/
 
 a {
         text-decoration:none;
