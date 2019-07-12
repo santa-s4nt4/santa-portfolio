@@ -1,8 +1,9 @@
 canvas {
     display: block;
     position: absolute;
-    left: 0%;
+    left: 0;
     top: 0;
+    bottom: 0;
     z-index: -999;
 }
 
@@ -81,7 +82,7 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 133px;
+        height: 140px;
         width: 210px;
         position: relative;
 
@@ -149,11 +150,19 @@ p.text {
 .content mark {
         font-family: a-otf-ud-shin-go-pr6n, sans-serif;
         text-align: center;
-        font-size: 1em;
+        font-size: 0.9em;
         color: #ffffff;
         background: #44444483;
         padding-right: 1%;
         padding-left: 1%;
+}
+
+.content p {
+        font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+        text-align: center;
+        font-size: 1em;
+        color: #ffffff;
+        padding: 5%;
 }
 
 .content {
@@ -165,4 +174,11 @@ p.text {
         color: #ffffff;
         text-align: center;
         padding-top: 5%;
+}
+
+.footer_content p {
+        font-family: mr-eaves-sans, sans-serif;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 1%;
 }

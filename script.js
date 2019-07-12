@@ -1,22 +1,23 @@
 var program;
 
 function setup() {
-        pixelDensity(1);
-
-        createCanvas(windowWidth, windowHeight, WEBGL);
-        gl = this.canvas.getContext('webgl');
-        rectMode(CENTER);
-        noStroke();
-        fill(1);
-        program = createShader(vert, frag);
+  pixelDensity(1);
+  var w = document.documentElement.scrollWidth;
+  var h = document.documentElement.scrollHeight;
+  createCanvas(w, h, WEBGL);
+  gl = this.canvas.getContext('webgl');
+  rectMode(CENTER);
+  noStroke();
+  fill(1);
+  program = createShader(vert, frag);
 }
 
 function draw() {
-        shader(program);
-        background(0);
-        program.setUniform('resolution', [width, height]);
-        program.setUniform('time', millis() / 1000);
-        rect(0, 0, width, height);
+  shader(program);
+  background(0);
+  program.setUniform('resolution', [width, height]);
+  program.setUniform('time', millis() / 1000);
+  rect(0, 0, width, height);
 }
 
 
@@ -89,10 +90,10 @@ void main()
     newp.y += 0.6/float(i)*cos(float(i)*p.x+time/(300.0/speed)+0.3*float(i+10))-2.0;
     p = newp;
   }
-  vec3 color = vec3(0.5 * sin(1.0*p.y)+0.5, 1.0*sin(0.5*p.y), 2.5+sin(p.x+p.y));
+  vec3 color = vec3(0.5 * sin(1.0*p.y)+0.2, 1.0*sin(0.5*p.y), 2.5+sin(p.x+p.y));
   gl_FragColor = vec4(color, 1.0);
 }`
 
 function windowResized() {
-        resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight);
 }
