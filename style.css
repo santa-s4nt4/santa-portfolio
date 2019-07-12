@@ -12,6 +12,13 @@ h1 {
         font-style: normal;
 }
 
+h2 {
+        text-align: center;
+        font-family: mr-eaves-sans, sans-serif;
+        font-size: 2em;
+        font-style: normal;
+}
+
 hr {
         margin: 5%;
 }
