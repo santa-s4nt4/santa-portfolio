@@ -49,8 +49,8 @@ nav a{
 }
 
 nav a.current{
-        color: #00B0F0;
-        border-bottom:2px solid #00B0F0;
+        color: #ffffff;
+        border-bottom:2px solid #ffffff;
 }
 
 nav a:hover{
@@ -176,6 +176,15 @@ p.text {
         font-family: mr-eaves-sans, sans-serif;
         color: #ffffff;
         padding-bottom: 1.5%;
+        font-size: 2.5em;
+        font-style: normal;
+}
+
+.content h3 {
+        text-align: center;
+        font-family: mr-eaves-sans, sans-serif;
+        color: #ffffff;
+        padding-top: 2%;
         font-size: 2.5em;
         font-style: normal;
 }
