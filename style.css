@@ -193,6 +193,10 @@ p.text {
         margin-right: 0%; 
 }
 
+.content iframe {
+        padding-top: 2%;
+}
+
 .content {
         text-align: center;
 }
