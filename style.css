@@ -121,11 +121,18 @@ a:hover {
 }
 
 .module img {
+        -webkit-filter: blur(0);
+        filter: blur(0);;
+        
         width: 100%;
         transition-duration: 0.5s;
 }
 
 .module:hover img {
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
         transform: scale(1.2);
         transition-duration: 0.5s;
 }
