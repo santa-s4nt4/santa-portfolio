@@ -229,6 +229,10 @@ p.text {
         text-align: center;
 }
 
+.content img {
+        padding-top: 2%;
+}
+
 .item {
         text-align: center;
 }
