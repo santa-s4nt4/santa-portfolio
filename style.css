@@ -40,6 +40,7 @@ nav li{
         list-style: none;
         display: inline-block;
         width: 1%;
+        padding: 2%;
         min-width: 200px;
 }
 
@@ -231,6 +232,7 @@ p.text {
 
 .content img {
         padding-top: 2%;
+        width: 80%;
 }
 
 .item {
