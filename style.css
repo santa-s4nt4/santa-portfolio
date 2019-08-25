@@ -97,9 +97,32 @@ a:hover {
         grid-gap: 1em;
 }
 
-.module {
-        width: 300px;
-        height: 226px;
+@media screen and (max-width: 375px){
+        .module {
+        margin: 0 auto;
+        overflow: hidden;
+        cursor: pointer;
+
+        /* Demo-Specific Styles */
+        background: #ffffff;
+        align-self: center;
+        align-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        width: 100%;
+        position: relative;
+
+        /* Flex Fallback */
+        margin-left: 5px;
+        margin-right: 5px;
+        flex: 1 1 200px;
+        }
+}
+
+@media screen and (min-width: 750px){
+        .module {
         margin: 0 auto;
         overflow: hidden;
         cursor: pointer;
@@ -119,7 +142,10 @@ a:hover {
         margin-left: 5px;
         margin-right: 5px;
         flex: 1 1 200px;
+        }
 }
+
+
 
 .module img {
         width: 100%;
