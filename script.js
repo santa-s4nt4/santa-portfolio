@@ -4,8 +4,10 @@ var h;
 
 function setup() {
   pixelDensity(1);
-  w = document.documentElement.scrollWidth;
-  h = document.documentElement.scrollHeight;
+  //w = document.documentElement.scrollWidth;
+  //h = document.documentElement.scrollHeight;
+  w = windowWidth;
+  h = windowHeight;
   createCanvas(w, h, WEBGL);
   gl = this.canvas.getContext('webgl');
   rectMode(CENTER);
