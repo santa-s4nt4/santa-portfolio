@@ -14,9 +14,37 @@ body {
         background-attachment: fixed;
 }
 
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .site-title {
         font-family: mr-eaves-sans, sans-serif;
         text-align: center;
+        color: #ffffff;
+}
+
+.site-title a {
+        text-decoration: none;
+        padding-left: 0.25%;
+        padding-right: 0.25%;
+}
+
+.site-title a:hover {
+        background: linear-gradient(-90deg, #e73c7e, #0e5aff,#23a6d5, #23d5ab);
+        background-size: 600% 600%;
+        animation: gradientBG 7.5s ease infinite;
+}
+
+.site-title a:visited {
         color: #ffffff;
 }
 
@@ -50,28 +78,40 @@ nav a{
         text-align: center;
         text-decoration: none;
         color: #ffffff;
+        padding-left: 0.25%;
+        padding-right: 0.25%;
 }
 
 nav a.current{
         color: #ffffff;
         border-bottom:2px solid #ffffff;
+        padding-left: 0.25%;
+        padding-right: 0.25%;
 }
 
-nav a:hover{
-        color:#55555521;
+.menu a {
+        text-decoration:none;
+        padding-left: 1%;
+        padding-right: 1%;
+        color: #ffffff;
+}
+
+.menu a:hover {
+        background: linear-gradient(-90deg, #e73c7e, #0e5aff,#23a6d5, #23d5ab);
+        background-size: 600% 600%;
+        animation: gradientBG 7.5s ease infinite;
 }
 
 a {
         text-decoration:none;
+        padding-left: 0.25%;
+        padding-right: 0.25%;
+        color: #ffffff;
 }
 
 a:visited {
         text-decoration:none;
         color: #ffffff;
-}
-
-a:hover {
-        color: #55555521;
 }
 
 .category-all p {
@@ -276,6 +316,22 @@ p.text {
         margin-bottom: 5%;
         margin-left: 0%;
         margin-right: 0%; 
+}
+
+.item a {
+        text-decoration: none;
+        padding-left: 0.4%;
+        padding-right: 0.4%;
+}
+
+.item a:hover {
+        background: linear-gradient(-90deg, #e73c7e, #0e5aff,#23a6d5, #23d5ab);
+        background-size: 600% 600%;
+        animation: gradientBG 7.5s ease infinite;
+}
+
+.item a:visited {
+        color: #ffffff;
 }
 
 .footer p {
