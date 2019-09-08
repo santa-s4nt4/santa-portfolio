@@ -41,7 +41,7 @@ body {
 .site-title a:hover {
         background: linear-gradient(-90deg, #e73c7e, #0e5aff,#23a6d5, #23d5ab);
         background-size: 600% 600%;
-        animation: gradientBG 7.5s ease infinite;
+        animation: gradientBG 4s ease infinite;
 }
 
 .site-title a:visited {
@@ -99,7 +99,7 @@ nav a.current{
 .menu a:hover {
         background: linear-gradient(-90deg, #e73c7e, #0e5aff,#23a6d5, #23d5ab);
         background-size: 600% 600%;
-        animation: gradientBG 7.5s ease infinite;
+        animation: gradientBG 4s ease infinite;
 }
 
 a {
